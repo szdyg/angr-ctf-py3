@@ -32,7 +32,7 @@ def should_abort(state):
 
 
 def main():
-  path_to_binary = './123'
+  path_to_binary = './02_angr_find_condition'
   project = angr.Project(path_to_binary)
   initial_state = project.factory.entry_state()
   simulation = project.factory.simgr(initial_state)
